@@ -96,8 +96,3 @@ form button {
 form button:hover {
     background-color: #218838;
 }
-
-img {
-    margin: 5px 0;
-    max-width: 150px;
-}
