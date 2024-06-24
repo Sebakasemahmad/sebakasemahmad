@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>العقارات</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js" defer></script>
+</head>
+<body>
+    <nav>
+        <a href="home.html">الرئيسية</a>
+        <a href="AboutUs.html">من نحن</a>
+        <a href="Properties.html">العقارات</a>
+    </nav>
+    <h1>العقارات</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>اختيار</th>
+                <th>إظهار التفاصيل</th>
+                <th>الإيجار الشهري</th>
+                <th>تفاصيل</th>
+                <th>المدينة</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="radio" name="property"></td>
+                <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                <td>500,000 ل.س</td>
+                <td>شقة غرفة وصالة - مساحة 70 م<sup>2</sup></td>
+                <td>دمشق</td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    <p>الطابق الثالث</p>
+                    <p>متوفر كراج</p>
+                    <p>المنطقة: ركن الدين</p>
+                    <p>بلكون مساحة 12 متر</p>
+                    <p>الملكية: طابو</p>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="property"></td>
+                <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                <td>600,000 ل.س</td>
+                <td>شقة غرفتين وصالة - مساحة 100 م<sup>2</sup></td>
+                <td>حلب</td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    <p>الطابق الثاني</p>
+                    <p>بدون كراج</p>
+                    <p>المنطقة: العزيزية</p>
+                    <p>بلكون مساحة 10 متر</p>
+                    <p>الملكية: عقد أمانة</p>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="property"></td>
+                <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                <td>700,000 ل.س</td>
+                <td>شقة ثلاث غرف وصالة - مساحة 150 م<sup>2</sup></td>
+                <td>حمص</td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    <p>الطابق الرابع</p>
+                    <p>متوفر كراج</p>
+                    <p>المنطقة: الزهراء</p>
+                    <p>بلكون مساحة 15 متر</p>
+                    <p>الملكية: طابو أخضر</p>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="property"></td>
+                <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                <td>800,000 ل.س</td>
+                <td>شقة أربع غرف وصالة - مساحة 200 م<sup>2</sup></td>
+                <td>اللاذقية</td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    <p>الطابق الأول</p>
+                    <p>متوفر كراج وحديقة</p>
+                    <p>المنطقة: الشاطئ الأزرق</p>
+                    <p>بلكون مساحة 20 متر</p>
+                    <p>الملكية: عقد أمانة</p>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="property"></td>
+                <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                <td>900,000 ل.س</td>
+                <td>فيلا - مساحة 300 م<sup>2</sup></td>
+                <td>طرطوس</td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    <p>طابقين</p>
+                    <p>متوفر كراج وحديقة</p>
+                    <p>المنطقة: مشتى الحلو</p>
+                    <p>بلكون مساحة 25 متر</p>
+                    <p>الملكية: طابو أخضر</p>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="property"></td>
+                <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                <td>1,000,000 ل.س</td>
+                <td>شقة خمس غرف وصالة - مساحة 250 م<sup>2</sup></td>
+                <td>دير الزور</td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    <p>الطابق الخامس</p>
+                    <p>متوفر كراج وحديقة</p>
+                    <p>المنطقة: القصور</p>
+                    <p>بلكون مساحة 30 متر</p>
+                    <p>الملكية: عقد أمانة</p>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="property"></td>
+                <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                <td>1,100,000 ل.س</td>
+                <td>فيلا - مساحة 350 م<sup>2</sup></td>
+                <td>السويداء</td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    <p>طابقين</p>
+                    <p>متوفر كراج وحديقة ومسبح</p>
+                    <p>المنطقة: صلخد</p>
+                    <p>بلكون مساحة 35 متر</p>
+                    <p>الملكية: طابو أخضر</p>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="property"></td>
+                <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                <td>1,200,000 ل.س</td>
+                <td>شقة - مساحة 400 م<sup>2</sup></td>
+                <td>حماة</td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    <p>الطابق السابع</p>
+                    <p>متوفر كراج وحديقة ومصعد</p>
+                    <p>المنطقة: حي البعث</p>
+                    <p>بلكون مساحة 35 متر</p>
+                    <p>الملكية: طابو أخضر</p>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="property"></td>
+                <td><button onclick="toggleDetails(this)">إظهار التفاصيل</button></td>
+                <td>1,300,000 ل.س</td>
+                <td>فيلا - مساحة 500 م<sup>2</sup></td>
+                <td>اللاذقية</td>
+            </tr>
+            <tr class="details" style="display: none;">
+                <td colspan="5">
+                    <p>طابقين</p>
+                    <p>متوفر كراج وحديقة ومسبح</p>
+                    <p>المنطقة: دمسرخو</p>
+                    <p>بلكون مساحة 50 متر</p>
+                    <p>الملكية: طابو أخضر</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>نموذج الطلب</h2>
+    <form id="propertyForm">
+        <label for="fullName">الاسم الكامل:</label>
+        <input type="text" id="fullName" name="fullName"><br>
+        
+        <label for="nationalID">الرقم الوطني:</label>
+        <input type="text" id="nationalID" name="nationalID" required><br>
+        
+        <label for="birthDate">تاريخ الولادة:</label>
+        <input type="date" id="birthDate" name="birthDate"><br>
+        
+        <label for="address">العنوان:</label>
+        <input type="text" id="address" name="address"><br>
+        
+        <label for="mobileNumber">رقم الموبايل:</label>
+        <input type="tel" id="mobileNumber" name="mobileNumber"><br>
+        
+        <label for="captcha">رمز التحقق:</label>
+        <img id="captchaImage" src="">
+        <input type="text" id="captcha" name="captcha"><br>
+        <button type="button" id="reloadCaptcha">إعادة توليد رمز التحقق</button>
+
+        <input type="submit" value="إرسال">
+    </form>
+</body>
+</html>
